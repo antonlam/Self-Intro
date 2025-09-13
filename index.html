@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Self Introduction</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="intro-container">
+            <h2>Welcome to My Page</h2>
+            <p>
+                My name is <span class="highlight">LAM Sun Yui, Anton</span>. 
+                I am passionate about <span class="highlight">STEM, CAD DESIGN and ENGINEERING</span> and enjoy working on projects 
+                involving <span class="highlight">various types of programming languages, CAD Application, etc...</span>. 
+                In my spare time, I love <span class="highlight">bowling 🎳 and swimming 🏊</span>.
+            </p>
+
+            <p>
+                Short-term goal: <span class="highlight">Complete Bachelor's degree</span> <br>
+                Long-term goal: <span class="highlight">Complete Master's degree </span> <br>
+            </p>
+
+            <div class="contact-info">
+                <p style="font-style: bold;">Get in touch:</p>
+                <p>
+                    - Email: <a href="mailto:antonlam1228@gmail.com">antonlam1228@gmail.com</a><br>
+                    - Phone number: <a href="tel:+85293800800">+852  93800800</a><br>
+                    - GitHub: <a href="https://github.com/antonlam" target="_blank">@antonlam1228</a>
+                </p>
+            </div>
+        </div>
+        
+        <section class="section vtimeline" aria-labelledby="vt-title">
+            <h2 id="vt-title">Milestone</h2>
+            <div class="vt-wrap">
+                <div class="vt-rail"></div>
+                <ol id="vt-list" class="vt-list" role="list"></ol>
+            </div>
+        </section>
+
+        <section class="section languages" aria-labelledby="languages-title">
+            <h2 id="languages-title">Languages</h2>
+            <div id="lang-list"></div>
+        </section>
+        
+        <section class="section Skills" aria-labelledby="skills-title">
+            <h2 id="languages-title">Technical Skills</h2>
+            <div id="skill-list"></div>
+        </section>
+
+
+        <h2 id="projects-title">Projects</h2>
+        <section class="projects" aria-label="Projects" id="projects"></section>
+
+        <h2 id="awards-title">Awards and Honors</h2>
+        <section class="section awards" aria-labelledby="awards-title">
+             <!--<p> You may click on each card to review the certificate!</p>-->
+            <ol class="timeline" role="list" id="awards"></ol>
+        </section>
+
+        <h2 id="activities-title">Leadership & Extracurricular Activities</h2>
+        <section class="section activities" aria-labelledby="activities-title">
+            <ol class="timeline" role="list" id="activities"></ol>
+        </section>
+
+        <button class="btn btn-primary" onclick="location.hash='top'" style="margin: 0 auto; display: block; margin-top: -1%;">Back to top</button>
+    </body>
+</html>
