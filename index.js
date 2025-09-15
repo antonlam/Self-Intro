@@ -52,7 +52,7 @@
   ];
 
   const skills = [
-    { skill : "Python",level : "Proficient",value : 90},
+    { skill : "Python", level : "Proficient",value : 90},
     { skill: "HTML, CSS", level: "Upper Intermediate", value: 75 },
     { skill: "C", level: "Upper Intermediate", value: 75 },
     { skill: "Arduino IDE", level: "Upper Intermediate", value: 75 },
@@ -61,7 +61,8 @@
     { skill: "Blender", level: "Upper Intermediate", value: 75 },
     { skill: "C++", level: "Upper Intermediate", value: 75 },
     { skill: "Linux", level: "Intermediate", value: 65 },
-    { skill: "Java", level: "Intermediate", value: 60 }
+    { skill: "Java", level: "Intermediate", value: 60 },
+    { skill: "Android Studio", level: "Intermediate", value: 50 }
   ]
   
   const timeline = [
@@ -93,9 +94,25 @@
   const awards = [
     {
       date: "2025-09",
-      title: "Gemini Certified Educator",
+      title: "Google AI for K12 Educators (Google)",
       bullets: [
-        "Passed the exmination for the Google AI education"
+        "Passed the exmination of Google AI for K12 Educator Course"
+      ],
+      image : "Certificate/Google_AI_for_K12_Educators_Google_for_Education.pdf"
+    },
+    {
+      date: "2025-09",
+      title: "Generative AI For Educators (Google)",
+      bullets: [
+        "Passed the exmination for the Generative AI For Educators Course"
+      ],
+      image : "Certificate/Generative_AI_for_Educators_Certificate_Google_for_Education.pdf"
+    },
+    {
+      date: "2025-09",
+      title: "Gemini Certified Educator (Google)",
+      bullets: [
+        "Passed the exmination for the Google AI Education"
       ],
       image : "Certificate/Gemini_certified_educator.jpg"
     },
@@ -288,23 +305,41 @@
       const titleEl = el("h3", { class: "event-title", text: a.title });
       const pointsEl = el("ul", { class: "event-points" }, ...a.bullets.map(t => el("li", { text: t })));
 
-      // Optional certificate image (hidden by default, toggled on click)
-      const imgWrap = a.image
-        ? el("div", { class: "award-image", style: "display:none;" },
+      // Optional certificate image or PDF (hidden by default, toggled on click)
+      let fileWrap = null;
+      if (a.image) {
+        const isPdf = a.image.toLowerCase().endsWith('.pdf');
+        if (isPdf) {
+          fileWrap = el(
+            "div",
+            { class: "award-image", style: "display:none;" },
+            el("embed", {
+              src: a.image,
+              type: "application/pdf",
+              width: "100%",
+              height: "480px",
+              style: "border-radius:8px;border:1px solid #e5e7eb;background:#f9f9f9;"
+            })
+          );
+        } else {
+          fileWrap = el(
+            "div",
+            { class: "award-image", style: "display:none;" },
             el("img", { src: a.image, alt: `${a.title} certificate`, loading: "lazy" })
-          )
-        : null;
+          );
+        }
+      }
 
       bodyDiv.append(titleEl, pointsEl);
-      if (imgWrap) bodyDiv.append(imgWrap);
+      if (fileWrap) bodyDiv.append(fileWrap);
 
       const li = el("li", { class: "event", style: "cursor:pointer;" }, dateDiv, bodyDiv);
 
-      if (imgWrap) {
+      if (fileWrap) {
         li.addEventListener("click", (ev) => {
           ev.stopPropagation();
-          const isHidden = imgWrap.style.display === "none";
-          imgWrap.style.display = isHidden ? "block" : "none";
+          const isHidden = fileWrap.style.display === "none";
+          fileWrap.style.display = isHidden ? "block" : "none";
         });
       }
 
