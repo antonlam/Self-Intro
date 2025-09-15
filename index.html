@@ -10,9 +10,9 @@
     </head>
     <body>
         <div class="intro-container">
-            <h2>Welcome to My Page</h2>
+            <h2 id="h2-title">About Me</h2>
             <p>
-                My name is 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My name is 
                 <span class="highlight">LAM Sun Yui, Anton</span>. 
                 Motivated emerging professional with a strong interest in the latest
                 <span class="highlight">Technology, Engineering, Mathematics, and CAD design, 
@@ -62,30 +62,48 @@
             </table>
 
             <div class="contact-info">
-                <p style="font-style: bold;">Get in touch:</p>
-                <p>
-                    - Email: <a href="mailto:antonlam1228@gmail.com">antonlam1228@gmail.com</a><br>
-                    - Phone number: <a href="tel:+85293800800">+852  93800800</a><br>
-                    - GitHub: <a href="https://github.com/antonlam" target="_blank">@antonlam1228</a>
-                </p>
+                <table>
+                    <th colspan="2">Get in touch:</th>
+                    <tr>
+                        <td class="table-tr-main">Email:</td>
+                        <td>:</td>
+                        <td class ="table-tr-info">
+                            <a href="mailto:antonlam1228@gmail.com">antonlam1228@gmail.com</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-tr-main">Phone number</td>
+                        <td>:</td>
+                        <td class ="table-tr-info">
+                            <a href="tel:+85293800800">+852  93800800</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-tr-main">GitHub</td>
+                        <td>:</td>
+                        <td class ="table-tr-info">
+                            <a href="https://github.com/antonlam" target="_blank">@antonlam1228</a>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
         
+        <h2 id="vt-title">Milestone</h2>
         <section class="section vtimeline" aria-labelledby="vt-title">
-            <h2 id="vt-title">Milestone</h2>
             <div class="vt-wrap">
                 <div class="vt-rail"></div>
                 <ol id="vt-list" class="vt-list" role="list"></ol>
             </div>
         </section>
 
+        <h2 id="languages-title">Languages</h2>
         <section class="section languages" aria-labelledby="languages-title">
-            <h2 id="languages-title">Languages</h2>
             <div id="lang-list"></div>
         </section>
         
+        <h2 id="skills-title">Technical Skills</h2>
         <section class="section Skills" aria-labelledby="skills-title">
-            <h2 id="languages-title">Technical Skills</h2>
             <div id="skill-list"></div>
         </section>
 
@@ -104,6 +122,6 @@
             <ol class="timeline" role="list" id="activities"></ol>
         </section>
 
-        <button class="btn btn-primary" onclick="location.hash='top'" style="margin: 0 auto; display: block; margin-top: -1%;">Back to top</button>
+        <button class="btn btn-primary" onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;" style="margin: 0 auto; display: block; margin-top: -1%;">Back to top</button>
     </body>
 </html>

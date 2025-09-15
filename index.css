@@ -380,4 +380,36 @@ p {
 .table-tr-side{
   /* border-left:3px solid gray;  */
   padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  border-bottom: 1px solid black;
+}
+
+.table-tr-info {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+#h2-title, #vt-title, #languages-title, #skills-title, #projects-title, #awards-title, #activities-title {
+  margin-top: 20px;
+  text-transform: none;
+  font-weight: normal;
+  font-style: italic; font-family: "Playfair Display","Bookman",serif;
+  color:#171111; 
+  letter-spacing:-0.005em; 
+  word-spacing:1px;
+  letter-spacing:none;
+}
+
+.event-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.event-points {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
 }

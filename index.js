@@ -292,7 +292,7 @@
           el("p", { class: "project-meta" }, ...metaChildren)
         )
       );
-      grid.append(card);
+      grid.append(card); 
     });
   })();
   
