@@ -413,3 +413,89 @@ p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: italic;
 }
+
+nav.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  overflow-y: auto;
+  background: #f6f9fe;
+  border-right: 1px solid #e0e7ef;
+  box-sizing: border-box;
+}
+
+/* Header: saturated accent color */
+.sidebar_header {
+  width: 100%;
+  background: #ed59e7;            /* vibrant magenta-pink */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.18rem;
+  padding: 16px 8px 10px 16px;
+  margin: 0;
+  text-align: left;
+  display: block;
+  letter-spacing: 0.2px;
+  border-bottom: 1.5px solid #f6f9fe;
+}
+
+/* Remove list bullets and spacing */
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link row: clean, bright default, rounded, larger text */
+.sidebar li a {
+  display: block;
+  position: relative;
+  padding: 14px 20px 14px 46px;
+  color: #254372;
+  background: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 8px 10px;
+  font-size: 1.08rem;
+  box-shadow: 0 1px 2px rgba(100,120,140,0.03);
+  transition: background 0.18s, color 0.16s;
+  border-left: 4px solid transparent;
+}
+
+/* Darker highlight on hover/focus */
+.sidebar li a:hover,
+.sidebar li a:focus {
+  background: #dce7fa;
+  color: #12305c;
+}
+
+/* Even deeper on active */
+.sidebar li a.active {
+  background: #b2cdf7;
+  color: #0f1a2c;
+  font-weight: 700;
+  border-left: 4px solid #ed59e7;
+}
+
+/* Icon slot */
+.sidebar li a::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  color: inherit;
+}
+
+/* Per-link emojis remain unchanged */
+nav a[href="#h2-title"]::before { content: "👤"; }
+nav a[href="#vt-title"]::before { content: "📅"; }
+nav a[href="#languages-title"]::before { content: "🌐"; }
+nav a[href="#skills-title"]::before { content: "🛠️"; }
+nav a[href="#projects-title"]::before { content: "📦"; }
+nav a[href="#awards-title"]::before { content: "🏅"; }
+nav a[href="#activities-title"]::before { content: "👥"; }
