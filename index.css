@@ -75,6 +75,7 @@ p {
     max-width: 360px;
     margin: 0 auto;                /* centers card in its grid cell when narrower */
     transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+    border: 2px solid black;
   }
 
   .project-card:hover {
@@ -499,3 +500,14 @@ nav a[href="#skills-title"]::before { content: "🛠️"; }
 nav a[href="#projects-title"]::before { content: "📦"; }
 nav a[href="#awards-title"]::before { content: "🏅"; }
 nav a[href="#activities-title"]::before { content: "👥"; }
+
+@media (max-width: 767px) {
+  nav.sidebar {
+    display: none;
+  }
+
+  /* Optional: remove the left margin on body for smaller screens */
+  body {
+    margin-left: 0;
+  }
+}
