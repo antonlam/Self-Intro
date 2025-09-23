@@ -6,6 +6,13 @@
   
   const projects = [
     {
+      title: "Youtube Adblock Javascript (Continuously Updating)",
+      url: "https://github.com/antonlam/youtube-adblock-javascript",
+      description: "",
+      image: "Image/youtube-adblock.png",
+      date: "2024-10-30 to 2025-09-22"
+    },
+    {
       title: "CS2-Market-Finder",
       url: "https://github.com/antonlam/cs2-market-python",
       description: "",
@@ -59,6 +66,7 @@
     { skill: "Fusion 360", level: "Upper Intermediate", value: 75 },
     { skill: "SolidWorks", level: "Upper Intermediate", value: 75 },
     { skill: "Blender", level: "Upper Intermediate", value: 75 },
+    { skill: "Javascript", level: "Upper Intermediate", value: 75 },
     { skill: "C++", level: "Upper Intermediate", value: 75 },
     { skill: "Linux", level: "Intermediate", value: 65 },
     { skill: "Java", level: "Intermediate", value: 60 },

@@ -371,27 +371,48 @@ p {
     }
     .lang-text { justify-self: start; }
   }
+
+  .table-wrap { overflow-x: auto; }
+
+  .goals {
+    width: 100%;
+    border-collapse: collapse;
+  }
   
-.table-tr-main {
-  text-align: right;
-  padding-right: 10px;
-  width: 8rem;
-}
-
-.table-tr-side{
-  /* border-left:3px solid gray;  */
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: left;
-  font-family: 'Courier New', Courier, monospace;
-  border-bottom: 1px solid black;
-}
-
-.table-tr-info {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: left;
-}
+  .main-title {
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    text-decoration: underline;
+    text-align: left;
+    padding: .4rem .5rem;
+  }
+  
+  .goals th[scope="row"],
+  .goals td {
+    /* border: 1px solid #000; */
+    padding-bottom: .75rem;
+    padding-left: 1rem;
+  }
+  
+  .goals th[scope="row"] {
+    width: 8rem;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .goals th[scope="row"]::after {
+    content: ":";
+    margin-left: .35rem;
+  }
+  
+  .goals td {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .compact { margin: 0; padding-left: 1.1rem; }
+  
 
 #h2-title, #vt-title, #languages-title, #skills-title, #projects-title, #awards-title, #activities-title {
   margin-top: 20px;
