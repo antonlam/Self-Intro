@@ -6,7 +6,7 @@
   
   const projects = [
     {
-      title: "Youtube Adblock Javascript (Continuously Updating)",
+      title: "Youtube Adblock Javascript",
       url: "https://github.com/antonlam/youtube-adblock-javascript",
       description: "",
       image: "Image/youtube-adblock.png",
@@ -20,7 +20,7 @@
       date: "2025-03-13"
     },
     {
-      title: "Download Stock Market data without yfinance (Github)",
+      title: "Download Stock Market data without yfinance",
       url: "https://github.com/antonlam/Download-Ticker-Data-without-yfinance",
       description: "",
       image: "Image/stooqdata.png",

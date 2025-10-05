@@ -391,7 +391,7 @@ p {
   .goals th[scope="row"],
   .goals td {
     /* border: 1px solid #000; */
-    padding-bottom: .75rem;
+    padding-top: .75rem;
     padding-left: 1rem;
   }
   
