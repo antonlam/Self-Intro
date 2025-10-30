@@ -104,7 +104,7 @@
       date: "2025-09",
       title: "Google AI for K12 Educators (Google)",
       bullets: [
-        "Passed the exmination of Google AI for K12 Educator Course"
+        "Passed the examination of Google AI for K12 Educator Course"
       ],
       image : "Certificate/Google_AI_for_K12_Educators_Google_for_Education.pdf"
     },
@@ -112,7 +112,7 @@
       date: "2025-09",
       title: "Generative AI For Educators (Google)",
       bullets: [
-        "Passed the exmination for the Generative AI For Educators Course"
+        "Passed the examination for the Generative AI For Educators Course"
       ],
       image : "Certificate/Generative_AI_for_Educators_Certificate_Google_for_Education.pdf"
     },
@@ -120,7 +120,7 @@
       date: "2025-09",
       title: "Gemini Certified Educator (Google)",
       bullets: [
-        "Passed the exmination for the Google AI Education"
+        "Passed the examination for the Google AI Education"
       ],
       image : "Certificate/Gemini_certified_educator.jpg"
     },
