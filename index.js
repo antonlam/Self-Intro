@@ -27,7 +27,7 @@
       date: "2024-07-20"
     },  {
         title: "Cup Grapping Robot Car",
-        url: "",
+        url: "https://youtu.be/TX7nTVww9Gg?si=PN8bWENkWX0RaSjX",
         description: "Develop a robot car that grap all the the cups along a specific path",
         image: "Image/robot-car-grapper.png",
         date: "2024-09 to 2025-12"
