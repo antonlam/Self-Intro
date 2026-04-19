@@ -6,67 +6,81 @@
   
   const projects = [
     {
+      title: "Fast Radar Imaging System for Battery Surface Analysis",
+      url: "https://youtu.be/KZLrQNAuwv4",
+      description: "A mmWave radar imaging system mounted on a CNC structure delivers real-time, high-resolution imaging of battery surfaces through synthetic aperture scanning and super-resolution techniques like CNN-based upsampling.",
+      image:"Image/radar-imaging.png",
+      date: "2025-07-02 to 2026-04-08"
+    },
+    {
+      title: "ArmPi Pro Robotic Car Project",
+      url : "",
+      description: "Used ROS services on an ArmPi Pro robotic car to detect AprilTags, pick up boxes, and stack them at target coordinates.",
+      image: "Image/armpi_pro.png",
+      date: "2025-10-28 to 2025-12-5"
+    },
+    {
       title: "Youtube Adblock Javascript",
       url: "https://github.com/antonlam/youtube-adblock-javascript",
-      description: "",
+      description: "A Tampermonkey-based JavaScript script that removes video, pop-up, and banner advertisements on YouTube.",
       image: "Image/youtube-adblock.png",
       date: "2024-10-30 to 2025-09-22"
     },
     {
       title: "CS2-Market-Finder",
       url: "https://github.com/antonlam/cs2-market-python",
-      description: "",
+      description: "Searches CS2 skins from the Steam Market and BitSkins.",
       image: "Image/cs2-market-python.png",
       date: "2025-03-13"
     },
     {
       title: "Download Stock Market data without yfinance",
       url: "https://github.com/antonlam/Download-Ticker-Data-without-yfinance",
-      description: "",
+      description: "Uses the Python requests library to download stock market data from https://stooq.com/.",
       image: "Image/stooqdata.png",
       date: "2024-07-20"
     },  {
         title: "Cup Grapping Robot Car",
         url: "https://youtu.be/TX7nTVww9Gg?si=PN8bWENkWX0RaSjX",
-        description: "Develop a robot car that grap all the the cups along a specific path",
+        description: "Developed a robot car that grabs cups along a predefined path.",
         image: "Image/robot-car-grapper.png",
         date: "2024-09 to 2025-12"
     }, {
         title: "Smart Drink Mixer",
         url: "https://www.youtube.com/watch?v=nlkYOpffhoI&ab_channel=ANTONLAM",
-        description: "Developed a beverage mixer for restaurant use, utilizing Arduino, 3D modeling and printing, and app development to enhance efficiency in beverage preparation.",
+        description: "Developed a beverage mixer for restaurant use with Arduino, 3D modeling and printing, and app development to improve preparation efficiency.",
         image: "Image/smart-drink-mixer.png",
         date: "2022-12 to 2023-05"
     }, {
         title: "Hand Gesture Wheelchair",
         url: "",
-        description: "Designed a wheelchair prototype implementing a hand gesture sensor to assist people with disabilities, utillizing Arduino, 3D modeling and printing.",
+        description: "Designed a wheelchair prototype with a hand-gesture sensor to support people with disabilities, using Arduino and 3D modeling/printing.",
         image: "Image/hand-gesture-wheelchair.png",
         date: "2020-03 to 2020-12"
     }, {
         title: "Resultant Boot",
         url: "",
-        description: "Designed a boot using biodegradable material, implementing 3D scanning, 3D modeling, 3D printing.",
+        description: "Designed boots using biodegradable materials and applied 3D scanning, 3D modeling, and 3D printing.",
         image: "Image/Resultant-boots.png",
         date: "2019-04 to 2019-05"
     }, {
         title: "Alcohol detection for vehicle",
         url: "",
-        description: "Implemented an alcohol sensor to prevent drunk driving through Arduino, laser cutting.",
+        description: "Implemented an alcohol detection system with Arduino and laser-cut components to help prevent drunk driving.",
         image: "Image/arduino-alcohol-sensor.png",
         date: "2018-05 to 2018-06"
     }
   ];
 
   const skills = [
-    { skill : "Python", level : "Proficient",value : 90},
+    { skill: "Python", level : "Proficient",value : 90},
     { skill: "HTML, CSS", level: "Upper Intermediate", value: 75 },
     { skill: "C", level: "Upper Intermediate", value: 75 },
     { skill: "Arduino IDE", level: "Upper Intermediate", value: 75 },
     { skill: "Fusion 360", level: "Upper Intermediate", value: 75 },
     { skill: "SolidWorks", level: "Upper Intermediate", value: 75 },
     { skill: "Blender", level: "Upper Intermediate", value: 75 },
-    { skill: "Javascript", level: "Upper Intermediate", value: 75 },
+    { skill: "JavaScript", level: "Upper Intermediate", value: 75 },
     { skill: "C++", level: "Upper Intermediate", value: 75 },
     { skill: "Linux", level: "Intermediate", value: 65 },
     { skill: "Java", level: "Intermediate", value: 60 },
@@ -95,7 +109,7 @@
     { start: "Sep 2023", 
       end: "Jul 2026", 
       title: "Bachelor of Engineering: Electronic Engineering", 
-      Location: "The Chinese University of Hong Kong, Major GPA: 3.404 / 4; CGPA: 3.165 / 4" 
+      Location: "The Chinese University of Hong Kong, Major GPA: 3.404/4.00; CGPA: 3.165/4.00" 
     }
   ];
 
@@ -104,7 +118,7 @@
       date: "2025-09",
       title: "Google AI for K12 Educators (Google)",
       bullets: [
-        "Passed the examination of Google AI for K12 Educator Course"
+        "Passed the Google AI for K12 Educators course examination."
       ],
       image : "Certificate/Google_AI_for_K12_Educators_Google_for_Education.pdf"
     },
@@ -112,7 +126,7 @@
       date: "2025-09",
       title: "Generative AI For Educators (Google)",
       bullets: [
-        "Passed the examination for the Generative AI For Educators Course"
+        "Passed the Generative AI for Educators course examination."
       ],
       image : "Certificate/Generative_AI_for_Educators_Certificate_Google_for_Education.pdf"
     },
@@ -120,7 +134,7 @@
       date: "2025-09",
       title: "Gemini Certified Educator (Google)",
       bullets: [
-        "Passed the examination for the Google AI Education"
+        "Passed the Google AI Education examination."
       ],
       image : "Certificate/Gemini_certified_educator.jpg"
     },
@@ -128,7 +142,7 @@
       date: "2025-09",
       title: "Certificate of Completion Google Cloud (Google)",
       bullets: [
-        "Completed the following online courses and exams"
+        "Completed the required online courses and examinations."
       ],
       image: "Certificate/Certificate of Completion Google Cloud.jpg"
     },
@@ -136,7 +150,7 @@
       date: "2025-09",
       title: "Certificate of Completion Digital Marketing (Google)",
       bullets: [
-        "Completed the following online courses and exams"
+        "Completed the required online courses and examinations."
       ],
       image: "Certificate/Certificate of Completion Digital Marketing.jpg"
     },
@@ -152,7 +166,7 @@
       date: "2021-06",
       title: "AI 900 Microsoft Azure AI Fundamentals (Microsoft)",
       bullets: [
-        "Passed the examination for the Azure AI program"
+        "Passed the examination for the Azure AI Fundamentals program."
       ],
       image : "Certificate/AI900 Microsoft Azure AI Fundamentals.jpg"
     },
@@ -160,7 +174,7 @@
       date: "2020-03",
       title: "World Mathematics Invitational - Bronze medal",
       bullets: [
-        "Awarded the bronze medal in WMI competition"
+        "Awarded the Bronze Medal in the World Mathematics Invitational."
       ],
       image : "Certificate/WMI2020.jpg"
     },
@@ -168,7 +182,7 @@
       date: "2019-03",
       title: "World Mathematics Invitational - Gold medal",
       bullets: [
-        "Awarded the gold medal in WMI competition"
+        "Awarded the Gold Medal in the World Mathematics Invitational."
       ],
       image : "Certificate/WMI2019.jpg"
     }
@@ -178,27 +192,27 @@
     {
       date: "2023-03",
       title: "EH Academy - CIP Cyber Training",
-      bullets: ["Learned cybersecurity knowledge and Linux"]
+      bullets: ["Built practical cybersecurity and Linux skills."]
     },
     {
       date: "2021-06",
       title: "AI900 Microsoft Azure AI Fundamentals Course",
-      bullets: ["Acquired foundational knowledge in AI field"]
+      bullets: ["Built a strong foundation in AI concepts."]
     },
     {
       date: "2019-02",
       title: "HK ICT Award 2019: Student Innovation Award",
-      bullets: ["Implemented IoT control light and ventilation system"]
+      bullets: ["Implemented an IoT-based lighting and ventilation control system."]
     },
     {
       date: "2018-08",
       title: "Augmented Reality and Product Design",
-      bullets: ["Learned and applied 3D Modeling and Printing technique"]
+      bullets: ["Learned and applied 3D modeling and printing techniques."]
     },
     {
       date: "2018-05",
       title: "Beyond Robot Certificate Program",
-      bullets: ["Acquired advanced knowledge in Arduino programming"]
+      bullets: ["Developed advanced Arduino programming skills."]
     }
   ];
   
