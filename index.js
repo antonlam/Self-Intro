@@ -89,10 +89,18 @@
     { skill: "SolidWorks", level: "Upper Intermediate", value: 75 },
     { skill: "Blender", level: "Upper Intermediate", value: 75 },
     { skill: "JavaScript", level: "Upper Intermediate", value: 75 },
+    { skill: "Git", level: "Upper Intermediate", value: 75 },
     { skill: "C++", level: "Upper Intermediate", value: 75 },
     { skill: "Linux", level: "Intermediate", value: 65 },
     { skill: "Java", level: "Intermediate", value: 60 },
-    { skill: "Android Studio", level: "Intermediate", value: 50 }
+    { skill: "MongoDB", level: "Intermediate", value: 60 },
+    { skill: "PostgreSQL", level: "Intermediate", value: 60 },
+    { skill: "Node.js", level: "Intermediate", value: 60 },
+    { skill: "React", level: "Intermediate", value: 60 },
+    { skill: "Rails", level: "Intermediate", value: 60 },
+    { skill: "Ruby", level: "Intermediate", value: 60 },
+    { skill: "Android Studio", level: "Intermediate", value: 60 },
+    { skill: "ROS", level: "Intermediate", value: 60 },
   ]
   
   const timeline = [
