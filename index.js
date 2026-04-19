@@ -6,6 +6,14 @@
   
   const projects = [
     {
+      "title": "Cultural Venues Interactive Web Application",
+      "url": "https://youtu.be/8WRvkr5-ZYo",
+      "description": "A full-stack web app for exploring and managing Hong Kong cultural venues and public facilities. It lets users sign in, browse venues on an interactive map, search and filter by keyword, area, or distance, save favorites, view and sort cultural events, and leave comments, while admins can manage users, events, and locations through REST APIs with secure JWT-based access control.",
+      "image": "Image/cultural-venus-interactive-map.png",
+      date: "2025-09-01 to 2025-12-05"
+    
+    },
+    {
       title: "Fast Radar Imaging System for Battery Surface Analysis",
       url: "https://youtu.be/KZLrQNAuwv4",
       description: "A mmWave radar imaging system mounted on a CNC structure delivers real-time, high-resolution imaging of battery surfaces through synthetic aperture scanning and super-resolution techniques like CNN-based upsampling.",
